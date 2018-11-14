@@ -5,9 +5,9 @@ android {
     defaultConfig {
         applicationId "cn.linhome.www.im"
         minSdkVersion 15
-        targetSdkVersion 22
-        versionCode 20180709
-        versionName "1.0.19"
+        targetSdkVersion 27
+        versionCode 20181114
+        versionName "1.0.20"
     }
     buildTypes {
         release {

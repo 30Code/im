@@ -13,33 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.msg;
+package cn.linhome.lib.im.callback;
+
+
+import cn.linhome.lib.im.msg.FIMMsg;
 
 /**
- * IM消息数据
- *
- * @param <M> 第三方IM消息类型
+ * IM消息接收回调
  */
-public interface FIMMsgData<M>
+public interface FIMMsgCallback
 {
     /**
-     * 返回数据类型
+     * 是否忽略当前消息
      *
-     * @return
+     * @param fimMsg
+     * @return true-忽略
      */
-    int getType();
+    boolean ignoreMsg(FIMMsg fimMsg);
 
     /**
-     * 将当前数据解析为第三方SDK的消息
+     * 消息回调方法
      *
-     * @return
+     * @param fimMsg
      */
-    M parseToSDKMsg();
-
-    /**
-     * 将数据解析为FIM消息
-     *
-     * @return
-     */
-    FIMMsg parseToMsg();
+    void onReceiveMsg(FIMMsg fimMsg);
 }

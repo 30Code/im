@@ -13,31 +13,44 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.conversation;
+package cn.linhome.lib.im.callback;
 
 /**
- * IM会话
+ * IM通用的结果回调
+ *
+ * @param <T> 结果数据类型
  */
-public interface FIMConversation
+public abstract class FIMResultCallback<T>
 {
-    /**
-     * 会话id
-     *
-     * @return
-     */
-    String getPeer();
+    private static final String KEY = "$";
 
     /**
-     * 会话类型
+     * 返回callback对应的tag，可用于ui销毁的时候移除callback
      *
      * @return
      */
-    FIMConversationType getType();
+    public String getTag()
+    {
+        String name = this.getClass().getName();
+        if (name.contains(KEY))
+        {
+            name = name.substring(0, name.indexOf(KEY));
+        }
+        return name;
+    }
 
     /**
-     * 该会话的未读数量
+     * 成功回调
      *
-     * @return
+     * @param result
      */
-    long getUnreadMessageNum();
+    public abstract void onSuccess(T result);
+
+    /**
+     * 失败回调
+     *
+     * @param code 错误码
+     * @param desc 失败描述
+     */
+    public abstract void onError(int code, String desc);
 }

@@ -9,16 +9,12 @@ import com.tencent.TIMMessage;
 import com.tencent.TIMSoundElem;
 import com.tencent.TIMTextElem;
 
-import cn.linhome.lib.FIMMsgReceiver;
-import cn.linhome.lib.callback.FIMResultCallback;
-import cn.linhome.lib.conversation.FIMConversation;
-import cn.linhome.lib.conversation.FIMConversationType;
-import cn.linhome.lib.msg.FIMMsgData;
-import cn.linhome.lib.msg.FIMMsgState;
-
-/**
- * Created by Administrator on 2017/11/23.
- */
+import cn.linhome.lib.im.FIMMsgReceiver;
+import cn.linhome.lib.im.callback.FIMResultCallback;
+import cn.linhome.lib.im.conversation.FIMConversation;
+import cn.linhome.lib.im.conversation.FIMConversationType;
+import cn.linhome.lib.im.msg.FIMMsgData;
+import cn.linhome.lib.im.msg.FIMMsgState;
 
 public class AppIMMsgReceiver extends FIMMsgReceiver<TIMMessage>
 {

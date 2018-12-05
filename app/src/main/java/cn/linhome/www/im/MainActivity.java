@@ -3,9 +3,9 @@ package cn.linhome.www.im;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import cn.linhome.lib.FIMManager;
-import cn.linhome.lib.callback.FIMMsgCallback;
-import cn.linhome.lib.msg.FIMMsg;
+import cn.linhome.lib.im.FIMManager;
+import cn.linhome.lib.im.callback.FIMMsgCallback;
+import cn.linhome.lib.im.msg.FIMMsg;
 
 public class MainActivity extends AppCompatActivity implements FIMMsgCallback
 {

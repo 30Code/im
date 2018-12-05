@@ -13,44 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.callback;
+package cn.linhome.lib.im.msg;
 
 /**
- * IM通用的结果回调
+ * IM消息数据
  *
- * @param <T> 结果数据类型
+ * @param <M> 第三方IM消息类型
  */
-public abstract class FIMResultCallback<T>
+public interface FIMMsgData<M>
 {
-    private static final String KEY = "$";
-
     /**
-     * 返回callback对应的tag，可用于ui销毁的时候移除callback
+     * 返回数据类型
      *
      * @return
      */
-    public String getTag()
-    {
-        String name = this.getClass().getName();
-        if (name.contains(KEY))
-        {
-            name = name.substring(0, name.indexOf(KEY));
-        }
-        return name;
-    }
+    int getType();
 
     /**
-     * 成功回调
+     * 将当前数据解析为第三方SDK的消息
      *
-     * @param result
+     * @return
      */
-    public abstract void onSuccess(T result);
+    M parseToSDKMsg();
 
     /**
-     * 失败回调
+     * 将数据解析为FIM消息
      *
-     * @param code 错误码
-     * @param desc 失败描述
+     * @return
      */
-    public abstract void onError(int code, String desc);
+    FIMMsg parseToMsg();
 }

@@ -4,12 +4,10 @@ import com.google.gson.Gson;
 import com.tencent.TIMCustomElem;
 import com.tencent.TIMMessage;
 
-import cn.linhome.lib.msg.FIMMsg;
-import cn.linhome.lib.msg.FIMMsgData;
+import cn.linhome.lib.im.msg.FIMMsg;
+import cn.linhome.lib.im.msg.FIMMsgData;
 
-/**
- * Created by Administrator on 2017/11/23.
- */
+
 public abstract class CustomData implements FIMMsgData<TIMMessage>
 {
     public static final int TEXT_IM = 1;

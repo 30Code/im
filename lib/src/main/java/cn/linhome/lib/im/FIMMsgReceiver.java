@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib;
+package cn.linhome.lib.im;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -24,9 +24,9 @@ import org.json.JSONObject;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
-import cn.linhome.lib.callback.FIMResultCallback;
-import cn.linhome.lib.msg.FIMMsg;
-import cn.linhome.lib.msg.FIMMsgData;
+import cn.linhome.lib.im.callback.FIMResultCallback;
+import cn.linhome.lib.im.msg.FIMMsg;
+import cn.linhome.lib.im.msg.FIMMsgData;
 
 /**
  * 第三方IM消息接收处理类

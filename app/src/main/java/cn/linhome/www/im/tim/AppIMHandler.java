@@ -6,16 +6,13 @@ import com.tencent.TIMManager;
 import com.tencent.TIMMessage;
 import com.tencent.TIMValueCallBack;
 
-import cn.linhome.lib.FIMHandler;
-import cn.linhome.lib.FIMMsgReceiver;
-import cn.linhome.lib.callback.FIMResultCallback;
-import cn.linhome.lib.conversation.FIMConversationType;
-import cn.linhome.lib.msg.FIMMsg;
-import cn.linhome.lib.msg.FIMMsgData;
+import cn.linhome.lib.im.FIMHandler;
+import cn.linhome.lib.im.FIMMsgReceiver;
+import cn.linhome.lib.im.callback.FIMResultCallback;
+import cn.linhome.lib.im.conversation.FIMConversationType;
+import cn.linhome.lib.im.msg.FIMMsg;
+import cn.linhome.lib.im.msg.FIMMsgData;
 
-/**
- * Created by Administrator on 2017/11/23.
- */
 public class AppIMHandler extends FIMHandler<TIMMessage>
 {
 

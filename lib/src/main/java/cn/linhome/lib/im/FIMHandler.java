@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib;
+package cn.linhome.lib.im;
 
 
-import cn.linhome.lib.callback.FIMResultCallback;
-import cn.linhome.lib.conversation.FIMConversationType;
-import cn.linhome.lib.msg.FIMMsg;
-import cn.linhome.lib.msg.FIMMsgData;
+import cn.linhome.lib.im.callback.FIMResultCallback;
+import cn.linhome.lib.im.conversation.FIMConversationType;
+import cn.linhome.lib.im.msg.FIMMsg;
+import cn.linhome.lib.im.msg.FIMMsgData;
 
 /**
  * IM处理类

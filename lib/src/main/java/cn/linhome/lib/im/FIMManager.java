@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib;
+package cn.linhome.lib.im;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -26,11 +26,11 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import cn.linhome.lib.callback.FIMMsgCallback;
-import cn.linhome.lib.callback.FIMResultCallback;
-import cn.linhome.lib.conversation.FIMConversationType;
-import cn.linhome.lib.msg.FIMMsg;
-import cn.linhome.lib.msg.FIMMsgData;
+import cn.linhome.lib.im.callback.FIMMsgCallback;
+import cn.linhome.lib.im.callback.FIMResultCallback;
+import cn.linhome.lib.im.conversation.FIMConversationType;
+import cn.linhome.lib.im.msg.FIMMsg;
+import cn.linhome.lib.im.msg.FIMMsgData;
 
 /**
  * IM管理基类

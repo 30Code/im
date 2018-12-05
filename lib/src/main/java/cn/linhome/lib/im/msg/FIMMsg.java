@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.msg;
+package cn.linhome.lib.im.msg;
 
 
-import cn.linhome.lib.conversation.FIMConversation;
+import cn.linhome.lib.im.conversation.FIMConversation;
 
 /**
  * IM消息

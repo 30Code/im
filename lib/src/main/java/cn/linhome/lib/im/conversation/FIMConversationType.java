@@ -13,28 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.callback;
-
-
-import cn.linhome.lib.msg.FIMMsg;
+package cn.linhome.lib.im.conversation;
 
 /**
- * IM消息接收回调
+ * 会话类型
  */
-public interface FIMMsgCallback
+public enum FIMConversationType
 {
     /**
-     * 是否忽略当前消息
-     *
-     * @param fimMsg
-     * @return true-忽略
+     * 无效
      */
-    boolean ignoreMsg(FIMMsg fimMsg);
-
+    Invalid,
     /**
-     * 消息回调方法
-     *
-     * @param fimMsg
+     * C2C
      */
-    void onReceiveMsg(FIMMsg fimMsg);
+    C2C,
+    /**
+     * 群组
+     */
+    Group,
+    /**
+     * 系统
+     */
+    System;
 }

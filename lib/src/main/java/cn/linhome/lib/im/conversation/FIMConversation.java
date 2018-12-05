@@ -13,27 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.linhome.lib.conversation;
+package cn.linhome.lib.im.conversation;
 
 /**
- * 会话类型
+ * IM会话
  */
-public enum FIMConversationType
+public interface FIMConversation
 {
     /**
-     * 无效
+     * 会话id
+     *
+     * @return
      */
-    Invalid,
+    String getPeer();
+
     /**
-     * C2C
+     * 会话类型
+     *
+     * @return
      */
-    C2C,
+    FIMConversationType getType();
+
     /**
-     * 群组
+     * 该会话的未读数量
+     *
+     * @return
      */
-    Group,
-    /**
-     * 系统
-     */
-    System;
+    long getUnreadMessageNum();
 }

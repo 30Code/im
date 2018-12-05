@@ -6,7 +6,7 @@ android {
         applicationId "cn.linhome.www.im"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 20181114
+        versionCode 20181205
         versionName "1.0.20"
     }
     buildTypes {
